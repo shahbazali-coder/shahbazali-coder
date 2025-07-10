@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>All Rest Countries</title>
+</head>
+
+<body>
+    <header class="header-container">
+        <div class="header-content">
+            <h2 class="title"><a href="./index.html">Where in the world!</a></h2>
+            <p class="theme-changer">
+                <i id="dark-mode-icon" class="fa-regular fa-moon"></i>
+                <i id="light-mode-icon" class="fa-solid fa-sun" style="display: none;"></i>
+                &nbsp;&nbsp;<span id="mode-text">Dark Mode</span>
+            </p>
+
+        </div>
+    </header>
+    <main>
+        <div class="search-filter-container">
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search for a country......">
+            </div>
+            <select class="filter-by-region">
+                <option class="option-tag" hidden>Filter by region</option>
+                <option class="option-tag" value="Africa">Africa</option>
+                <option class="option-tag" value="America">America</option>
+                <option class="option-tag" value="Asia">Asia</option>
+                <option class="option-tag" value="Europe">Europe</option>
+                <option class="option-tag" value="Oceania">Oceania</option>
+            </select>
+        </div>
+        <div class="countries-container"></div>
+    </main>
+    <script src="./app.js" defer></script>
+</body>
+
+</html>
